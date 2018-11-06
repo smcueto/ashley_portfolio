@@ -15,11 +15,16 @@
         <nav class="nav__menu">
             <ul class="nav__links">
                 <li class="nav__items"><a href="/" class="nav__link">Home</a></li>
-                <li class="nav__items"><a href="/About.html" class="nav__link">About</a></li>
-                <li class="nav__items"><a href="/Projects.html" class="nav__link">Projects</a></li>
-                <li class="nav__items"><a href="/Contact.html" class="nav__link">Contact</a></li>
+                <li class="nav__items"><a href="#About.html" class="nav__link">About</a></li>
+                <li class="nav__items"><a href="#Projects.html" class="nav__link">Projects</a></li>
+                <li class="nav__items"><a href="mailto:ashley.addison1990@gmail.com" target="_top" class="nav__link">Contact</a></li>
             </ul>
         </nav>
+        <!-- TODO!!!!! -->
+        <!-- RESIZE IMAGE AND FIX NAV -->
+        <div class="nav__image-container">
+            <img src="images/background--image.jpg" alt="" class="nav__background-image">
+        </div>
     </header>
     <main class="home">
         <h1 class="home__heading home__heading--lg">Ashley <span class="home__text-secondary">Addison</span></h1>
@@ -41,7 +46,7 @@
     <section class="about">
         <!-- TODO ADD IMAGE AND BIO -->
         <h2 class="about__title">About Me</h2>
-        <img src="images/me.png">
+        <img class="about__img" src="images/me.png">
         <p class="about__bio">Hi I'm Ashley and Oakland based, web developer with a passion</p>
     </section>
     <section class="technologies">
@@ -77,14 +82,16 @@
                 </ul>
             </li>
         </ul>
-        <section class="projects">
+        <section class="project">
             <!-- TODO ADD IMG WITH LINK TO PROJECTS -->
+        <h2 class="project__header">Projects</h2>
             <img src="" alt="" class="project__pages"><a href=""></a>
             <img src="" alt="" class="project__pages"><a href=""></a>
             <img src="" alt="" class="project__pages"><a href=""></a>
             <img src="" alt="" class="project__pages"><a href=""></a>
         </section>
     </section>
+
     <script src="js/main.js"></script>
 </body>
 </html>

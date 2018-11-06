@@ -71,10 +71,20 @@ a{
 .about {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     &__title {
         width: 100%;
         padding-bottom: 2rem;
         text-align: center;
+    }
+    &__img{
+        width: 200px;
+        border-radius: 50%;
+    }
+    &__bio {
+        padding-left: 40px;
+        width: 50%;
     }
 }
 

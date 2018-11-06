@@ -47,11 +47,19 @@ a {
 
 .about {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
   .about__title {
     width: 100%;
     padding-bottom: 2rem;
     text-align: center; }
+  .about__img {
+    width: 200px;
+    border-radius: 50%; }
+  .about__bio {
+    padding-left: 40px;
+    width: 50%; }
 
 .technologies {
   display: flex;
