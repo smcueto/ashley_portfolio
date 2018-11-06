@@ -1,6 +1,70 @@
-$primary-color: #444;
+$primary-color: rgb(2, 12, 14);
+$secondary-color: rgb(27, 216, 233);
+$font-family: 'Anton', sans-serif;
+
+@mixin easeOut {
+    transition: all 1.5s ease-out;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body{
     background-color: $primary-color;
     color: white;
+    height: 100%;
+    line-height: 1.5;
+    background: opacity(0.2);
 }
+
+.nav{
+    overflow: hidden;
+    &__menu{
+        display: flex;
+    }
+    &__links{
+        list-style: none;
+    }
+    &__link{
+        color: $secondary-color;
+        text-decoration: none;
+    }
+}
+
+.home{
+    padding: 4rem;
+    height: 100%;
+    margin-top: 20vh;
+    &__heading{
+        font-weight: 300;
+    }
+    &__heading--lg{
+        font-family: $font-family;
+        font-size: 6rem;
+    }
+    &__text-secondary{
+        color: $secondary-color;
+    }
+    &__heading--sm{
+        margin-bottom: 2rem;
+       padding: 0.2rem, 1rem;
+       background: rgba(lighten($primary-color, 2), 0.5);
+    }
+}
+a{
+    color: white;
+}
+.icons{
+    
+    a{
+        padding: 0.4rem;
+        &:hover{
+            color: $secondary-color;
+            @include easeOut;
+        }
+    }
+}
+

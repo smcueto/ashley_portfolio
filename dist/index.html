@@ -4,20 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Welcome to my portfolio</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
 </head>
 <body>
-    <div class="nav__menu">
-        <nav class="nav__list">
+    <header class="nav">
+        <nav class="nav__menu">
             <ul class="nav__links">
-                <li class="nav__items"><a href="#" class="nav__link">Ashley</a></li>
-                <li class="nav__items"><a href="#" class="nav__link">About</a></li>
-                <li class="nav__items"><a href="#" class="nav__link">Experience</a></li>
-                <li class="nav__items"><a href="#" class="nav__link">Project</a></li>
-                <li class="nav__items"><a href="#" class="nav__link">Contact</a></li>
+                <li class="nav__items"><a href="/" class="nav__link">Home</a></li>
+                <li class="nav__items"><a href="/About.html" class="nav__link">About</a></li>
+                <li class="nav__items"><a href="/Projects.html" class="nav__link">Projects</a></li>
+                <li class="nav__items"><a href="/Contact.html" class="nav__link">Contact</a></li>
             </ul>
         </nav>
-    </div>
+    </header>
+    <main class="home">
+        <h1 class="home__heading home__heading--lg">Ashley <span class="home__text-secondary">Addison</span></h1>
+        <h2 class="home__heading home__heading--sm">
+            Web Developer
+        </h2>
+        <div class="icons">
+            <a href="https://twitter.com/c0mputer_junkie">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ashleyaddison1990">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/c0mputer-junkie">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+        </div>
+    </main>
+    <section class="about">
+        <!-- TODO ADD IMAGE AND BIO -->
+        <img src="" alt="">
+        <p class="about__bio">Hi I'm Ashley and Oakland based, web developer with a passion</p>
+    </section>
+    <section class="technologies">
+        <ul class="technologies__column">
+            <li class="technologies__list">
+                <span class="technologies__title">Frontend</span>
+                <ul class="technologies__list-copy">
+                    <li class="technologies__item">HTML</li>
+                    <li class="technologies__item">responsive CSS</li>
+                    <li class="technologies__item">Sass</li>
+                    <li class="technologies__item">React</li>
+                    <li class="technologies__item">JavaScript</li>
+                    <li class="technologies__item">JQuery</li>
+                </ul>
+            </li>
+            <li class="technologies__list">
+                <span class="technologies__backend">Backend</span>
+                <ul class="technologies__list-copy">
+                    <li class="technologies__item">Node</li>
+                    <li class="technologies__item">Express</li>
+                    <li class="technologies__item">MySQL</li>
+                    <li class="technologies__item">MongoDB</li>
+                </ul>
+            </li>
+            <li class="technologies__list">
+                <span class="technologies__devtools">Tools</span>
+                <ul class="technologies__list-copy">
+                    <li class="technologies__item">GitHub</li>
+                    <li class="technologies__item">Git</li>
+                    <li class="technologies__item">bash</li>
+                    <li class="technologies__item">Visual Studio Code</li>
+                </ul>
+            </li>
+        </ul>
+        <section class="projects">
+            <!-- TODO ADD IMG WITH LINK TO PROJECTS -->
+            <img src="" alt="" class="project__pages"><a href=""></a>
+            <img src="" alt="" class="project__pages"><a href=""></a>
+            <img src="" alt="" class="project__pages"><a href=""></a>
+            <img src="" alt="" class="project__pages"><a href=""></a>
+        </section>
+    </section>
+    <script src="js/main.js"></script>
 </body>
 </html>

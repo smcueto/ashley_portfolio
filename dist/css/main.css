@@ -1,3 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 body {
-  background-color: #444;
+  background-color: #020c0e;
+  color: white;
+  height: 100%;
+  line-height: 1.5;
+  background: opacity(0.2); }
+
+.nav {
+  overflow: hidden; }
+  .nav__menu {
+    display: flex; }
+  .nav__links {
+    list-style: none; }
+  .nav__link {
+    color: #1bd8e9;
+    text-decoration: none; }
+
+.home {
+  padding: 4rem;
+  height: 100%;
+  margin-top: 20vh; }
+  .home__heading {
+    font-weight: 300; }
+  .home__heading--lg {
+    font-family: "Anton", sans-serif;
+    font-size: 6rem; }
+  .home__text-secondary {
+    color: #1bd8e9; }
+  .home__heading--sm {
+    margin-bottom: 2rem;
+    padding: 0.2rem, 1rem;
+    background: rgba(3, 20, 23, 0.5); }
+
+a {
   color: white; }
+
+.icons a {
+  padding: 0.4rem; }
+  .icons a:hover {
+    color: #1bd8e9;
+    transition: all 1.5s ease-out; }
+
+.technologies__column {
+  display: flex;
+  flex-direction: row; }
