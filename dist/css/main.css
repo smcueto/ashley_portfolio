@@ -45,6 +45,33 @@ a {
     color: #1bd8e9;
     transition: all 1.5s ease-out; }
 
-.technologies__column {
+.about {
   display: flex;
-  flex-direction: row; }
+  flex-wrap: wrap; }
+  .about__title {
+    width: 100%;
+    padding-bottom: 2rem;
+    text-align: center; }
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .technologies__header {
+    padding-top: 10rem;
+    width: 100%;
+    text-align: center; }
+  .technologies__column {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 36px; }
+  .technologies__title {
+    padding-bottom: 32px; }
+  .technologies__list {
+    display: flex;
+    flex-direction: column; }
+  .technologies__list-copy {
+    list-style: none; }
+  .technologies__item {
+    padding-bottom: 20px; }

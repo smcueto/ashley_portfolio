@@ -68,3 +68,46 @@ a{
     }
 }
 
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    &__title {
+        width: 100%;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+}
+
+
+
+
+
+.technologies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__header {
+        padding-top: 10rem;
+        width: 100%;
+        text-align: center;
+    }
+    &__column {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        padding-top: 36px;
+    }
+    &__title {
+        padding-bottom: 32px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__list-copy {
+        list-style: none;
+    }
+    &__item {
+        padding-bottom: 20px;
+    }
+}
