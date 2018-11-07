@@ -32,6 +32,11 @@ body{
         color: $secondary-color;
         text-decoration: none;
     }
+    &__image-container{
+        width: 600px;
+        height: 700px;
+        object-fit: contain;
+    }
 }
 
 .home{
@@ -77,6 +82,7 @@ a{
         width: 100%;
         padding-bottom: 2rem;
         text-align: center;
+        font-size: 2rem;
     }
     &__img{
         width: 200px;
@@ -100,6 +106,7 @@ a{
         padding-top: 10rem;
         width: 100%;
         text-align: center;
+        font-size: 2rem;
     }
     &__column {
         display: flex;
@@ -109,6 +116,7 @@ a{
     }
     &__title {
         padding-bottom: 32px;
+        font-size: x-large;
     }
     &__list {
         display: flex;
@@ -119,5 +127,25 @@ a{
     }
     &__item {
         padding-bottom: 20px;
+    }
+}
+
+.project{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    &__header {
+        padding: 5rem;
+        padding-bottom: 5rem;
+        text-align: center;
+        width: 100%;
+        font-size: 2rem;
+    }
+    &__pages {
+        width: 425px;
+        height: 350px;
+        padding-bottom: 24px;
     }
 }

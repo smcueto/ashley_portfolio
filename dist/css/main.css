@@ -19,6 +19,10 @@ body {
   .nav__link {
     color: #1bd8e9;
     text-decoration: none; }
+  .nav__image-container {
+    width: 600px;
+    height: 700px;
+    object-fit: contain; }
 
 .home {
   padding: 4rem;
@@ -53,7 +57,8 @@ a {
   .about__title {
     width: 100%;
     padding-bottom: 2rem;
-    text-align: center; }
+    text-align: center;
+    font-size: 2rem; }
   .about__img {
     width: 200px;
     border-radius: 50%; }
@@ -68,14 +73,16 @@ a {
   .technologies__header {
     padding-top: 10rem;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    font-size: 2rem; }
   .technologies__column {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     padding-top: 36px; }
   .technologies__title {
-    padding-bottom: 32px; }
+    padding-bottom: 32px;
+    font-size: x-large; }
   .technologies__list {
     display: flex;
     flex-direction: column; }
@@ -83,3 +90,20 @@ a {
     list-style: none; }
   .technologies__item {
     padding-bottom: 20px; }
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row; }
+  .project__header {
+    padding: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem; }
+  .project__pages {
+    width: 425px;
+    height: 350px;
+    padding-bottom: 24px; }
