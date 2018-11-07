@@ -13,21 +13,37 @@ body {
 .nav {
   overflow: hidden; }
   .nav__menu {
-    display: flex; }
+    display: flex;
+    justify-content: space-around;
+    padding: 14px; }
+  .nav__logo {
+    font-family: "Anton", sans-serif;
+    font-size: 2rem; }
+  .nav__logo-name {
+    color: white;
+    text-decoration: none; }
   .nav__links {
-    list-style: none; }
+    list-style: none;
+    display: flex;
+    align-items: center; }
+  .nav__items {
+    padding-left: 24px; }
   .nav__link {
     color: #1bd8e9;
     text-decoration: none; }
   .nav__image-container {
-    width: 600px;
-    height: 700px;
-    object-fit: contain; }
+    object-fit: contain;
+    width: 100%;
+    position: absolute;
+    z-index: -1; }
+  .nav__background-image {
+    width: 100%; }
 
 .home {
   padding: 4rem;
   height: 100%;
-  margin-top: 20vh; }
+  margin-top: 20vh;
+  position: relative; }
   .home__heading {
     font-weight: 300; }
   .home__heading--lg {

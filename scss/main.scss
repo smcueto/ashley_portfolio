@@ -24,18 +24,38 @@ body{
     overflow: hidden;
     &__menu{
         display: flex;
+        justify-content: space-around;
+        padding: 14px;
+    }
+    &__logo{
+        font-family: $font-family;
+        font-size: 2rem;    
+    }
+    &__logo-name{
+       color: white;
+       text-decoration: none;
     }
     &__links{
         list-style: none;
+        display: flex;
+        align-items: center
+    }
+    &__items{
+        padding-left: 24px;
     }
     &__link{
         color: $secondary-color;
         text-decoration: none;
     }
     &__image-container{
-        width: 600px;
-        height: 700px;
         object-fit: contain;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    
+    }
+    &__background-image{
+        width: 100%;
     }
 }
 
@@ -43,6 +63,7 @@ body{
     padding: 4rem;
     height: 100%;
     margin-top: 20vh;
+    position: relative;
     &__heading{
         font-weight: 300;
     }
@@ -93,9 +114,6 @@ a{
         width: 50%;
     }
 }
-
-
-
 
 
 .technologies{
