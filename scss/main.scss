@@ -1,6 +1,8 @@
 $primary-color: rgb(2, 12, 14);
 $secondary-color: rgb(27, 216, 233);
 $font-family: 'Anton', sans-serif;
+$tablet: 768px;
+$desktop: 1200px;
 
 @mixin easeOut {
     transition: all 1.5s ease-out;
@@ -21,15 +23,15 @@ body{
 }
 
 .nav{
-    overflow: hidden;
     &__menu{
         display: flex;
         justify-content: space-around;
-        padding: 14px;
+        padding: 12px;
+        align-items: center;
     }
     &__logo{
         font-family: $font-family;
-        font-size: 2rem;    
+        font-size: 24px;    
     }
     &__logo-name{
        color: white;
@@ -37,8 +39,12 @@ body{
     }
     &__links{
         list-style: none;
+    
+        align-items: center;
+        @media only screen and (min-width: $tablet) {
         display: flex;
-        align-items: center
+        font-size: 18px;
+        }
     }
     &__items{
         padding-left: 24px;
@@ -60,58 +66,104 @@ body{
 }
 
 .home{
-    padding: 4rem;
+    padding: 1rem;
     height: 100%;
-    margin-top: 20vh;
+    margin-top: 10vh;
     position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: 8vw;
+    @media only screen and (min-width: $tablet) {
+        margin-top: 22vh;
+        }
+        @media only screen and (min-width: $tablet){
+           margin-top: 30vh;
+        }
     &__heading{
         font-weight: 300;
     }
     &__heading--lg{
         font-family: $font-family;
-        font-size: 6rem;
+        font-size: 22px;
+        width: 100%;
+        @media only screen and (min-width: $tablet){
+            font-size: 2.5rem;
+        }
+        @media only screen and (min-width: $desktop){
+            font-size: 4rem;
+        }
     }
     &__text-secondary{
         color: $secondary-color;
     }
     &__heading--sm{
+        margin-bottom: 0.5em;
+       width: 100%;
+       font-size: 14px;
+       @media only screen and(min-width: $tablet){
+        font-size: 1.5rem;
         margin-bottom: 2rem;
-       padding: 0.2rem, 1rem;
-       background: rgba(lighten($primary-color, 2), 0.5);
+        padding: 0.2rem, 1rem;
+        font-size: 2rem;
+       }
     }
 }
 a{
     color: white;
 }
 .icons{
-    
+    display: flex;  
+    width: 100%;
     a{
-        padding: 0.4rem;
+        padding: 0.2rem;
+        text-decoration: none;
         &:hover{
             color: $secondary-color;
             @include easeOut;
+            padding: 0.4rem;
+            
         }
     }
 }
 
+.fa-2x {
+    font-size: 1em;
+    @media only screen and (min-width: $tablet){
+        font-size: 2em;
+    }
+}
 .about {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 10vh;
+    @media only screen and(min-width: $tablet) {
+        margin-top: 20vh;
+    }
+    @media only screen and (min-width: $desktop){
+        margin-top: 25vh;
+    }
     &__title {
         width: 100%;
         padding-bottom: 2rem;
         text-align: center;
-        font-size: 2rem;
+        font-size: 22px;
+        @media only screen and (min-width: $tablet){
+            font-size: 2rem;
+        }
     }
     &__img{
         width: 200px;
         border-radius: 50%;
     }
     &__bio {
-        padding-left: 40px;
+        padding-top: 1rem;
         width: 50%;
+        @media only screen and (min-width:$tablet){
+            padding-left: 40px;
+            
+        }
     }
 }
 
@@ -120,25 +172,34 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10vh;
+    @media only screen and (min-width:$tablet){
+        margin-top: 20vh;
+    }
     &__header {
-        padding-top: 10rem;
         width: 100%;
         text-align: center;
         font-size: 2rem;
+        padding-bottom: 2rem;
+        @media only screen and (min-width: $tablet){
+        padding: 2.5rem;
+        }
     }
     &__column {
         display: flex;
         width: 100%;
         justify-content: space-evenly;
-        padding-top: 36px;
+        padding-left: 24px;
     }
     &__title {
         padding-bottom: 32px;
         font-size: x-large;
+        color: $secondary-color;
     }
     &__list {
         display: flex;
         flex-direction: column;
+        padding-left: 28px;
     }
     &__list-copy {
         list-style: none;
@@ -148,15 +209,15 @@ a{
     }
 }
 
-.project{
+.projects{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     flex-direction: row;
+    margin-top: 20vh;
     &__header {
-        padding: 5rem;
-        padding-bottom: 5rem;
+        padding-bottom: 2rem;
         text-align: center;
         width: 100%;
         font-size: 2rem;
@@ -164,6 +225,15 @@ a{
     &__pages {
         width: 425px;
         height: 350px;
-        padding-bottom: 24px;
+        padding: 24px;
+    }
+    &__coming-soon{
+        width: 425px;
+        height: 350px;
+       position:relative;
+    }
+    &__giphy-embed {
+        width: 425px;
+        height: 350px;
     }
 }
