@@ -177,7 +177,8 @@ a {
   justify-content: center;
   width: 100%;
   flex-direction: row;
-  margin-top: 20vh; }
+  margin-top: 20vh;
+  padding-bottom: 3rem; }
   .projects__header {
     padding-bottom: 2rem;
     text-align: center;
@@ -194,3 +195,12 @@ a {
   .projects__giphy-embed {
     width: 425px;
     height: 350px; }
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5rem;
+  align-items: center; }
+
+.copyright {
+  padding-left: 6px; }
