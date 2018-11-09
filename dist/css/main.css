@@ -54,12 +54,11 @@ body {
   margin-top: 10vh;
   position: relative;
   flex-wrap: wrap;
-  display: flex;
-  margin-left: 8vw; }
+  display: flex; }
   @media only screen and (min-width: 768px) {
     .home {
       margin-top: 22vh; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1200px) {
     .home {
       margin-top: 30vh; } }
   .home__heading {
@@ -101,10 +100,22 @@ a {
       transition: all 1.5s ease-out;
       padding: 0.4rem; }
 
-.fa-2x {
+.fa-twitter {
   font-size: 1em; }
   @media only screen and (min-width: 768px) {
-    .fa-2x {
+    .fa-twitter {
+      font-size: 2em; } }
+
+.fa-linkedin {
+  font-size: 1em; }
+  @media only screen and (min-width: 768px) {
+    .fa-linkedin {
+      font-size: 2em; } }
+
+.fa-github {
+  font-size: 1em; }
+  @media only screen and (min-width: 768px) {
+    .fa-github {
       font-size: 2em; } }
 
 .about {
@@ -136,6 +147,9 @@ a {
     @media only screen and (min-width: 768px) {
       .about__bio {
         padding-left: 40px; } }
+  @media only screen and (min-width: 1200px) {
+    .aboutabout__secondary {
+      padding-left: 127px; } }
 
 .technologies {
   display: flex;
@@ -178,7 +192,8 @@ a {
   width: 100%;
   flex-direction: row;
   margin-top: 20vh;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  padding-left: 20px; }
   .projects__header {
     padding-bottom: 2rem;
     text-align: center;
@@ -196,7 +211,7 @@ a {
     width: 425px;
     height: 350px; }
 
-.footer {
+footer {
   display: flex;
   justify-content: flex-start;
   padding-left: 5rem;

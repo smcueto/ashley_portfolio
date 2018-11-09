@@ -72,11 +72,10 @@ body{
     position: relative;
     flex-wrap: wrap;
     display: flex;
-    margin-left: 8vw;
     @media only screen and (min-width: $tablet) {
         margin-top: 22vh;
         }
-        @media only screen and (min-width: $tablet){
+        @media only screen and (min-width: $desktop){
            margin-top: 30vh;
         }
     &__heading{
@@ -126,7 +125,20 @@ a{
     }
 }
 
-.fa-2x {
+.fa-twitter{
+    font-size: 1em;
+    @media only screen and (min-width: $tablet){
+        font-size: 2em;
+    }
+}
+
+.fa-linkedin{
+    font-size: 1em;
+    @media only screen and (min-width: $tablet){
+        font-size: 2em;
+    }
+}
+.fa-github{
     font-size: 1em;
     @media only screen and (min-width: $tablet){
         font-size: 2em;
@@ -163,6 +175,11 @@ a{
         @media only screen and (min-width:$tablet){
             padding-left: 40px;
             
+        }
+    }
+    &about__secondary{
+        @media only screen and(min-width: $desktop){
+            padding-left: 127px;
         }
     }
 }
@@ -217,6 +234,7 @@ a{
     flex-direction: row;
     margin-top: 20vh;
     padding-bottom: 3rem;
+    padding-left: 20px;
     &__header {
         padding-bottom: 2rem;
         text-align: center;
@@ -238,7 +256,7 @@ a{
         height: 350px;
     }
 }
-.footer {
+footer {
     display: flex;
     justify-content: flex-start;
     padding-left: 5rem;
